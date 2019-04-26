@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cv_height_for_chat">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bubble_type">
+            <ImageView
+                android:id="@+id/img_placeholder"
+                android:layout_width="@dimen/img_width_sender"
+                android:layout_height="@dimen/img_height_sender"
+                android:src="@drawable/default_avatar"
+                android:padding="@dimen/sender_chat_padding_allside"
+                android:contentDescription="@null"/>
+            <TextView
+                android:id="@+id/tv_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/img_placeholder"
+                android:text="@string/sender"
+                android:textColor="@color/white_color"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_margin="@dimen/margin_allside"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
